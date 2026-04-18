@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Display */
+.display {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#expression {
+  font-size: 16px;
+  color: gray;
+  min-height: 20px;
+}
+
+#result {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* Operators */
+.operator {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Equal */
+.equal {
+  background: orange;
+  color: white;
+}
+
+/* Clear */
+.clear {
+  font-weight: bold;
+}
